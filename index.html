@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester API de Pedidos</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Testador de API de Pedidos</h1>
+    
+    <h2>1. Criar Novo Pedido</h2>
+    <form id="createOrderForm">
+        <label for="numeroPedido">Número do Pedido:</label>
+        <input type="text" id="numeroPedido" value="v10089015vdb-01" required>
+        <br><br>
+        
+        <label for="valorTotal">Valor Total:</label>
+        <input type="number" id="valorTotal" value="10000" required>
+        <br><br>
+        
+        <label for="dataCriacao">Data de Criação:</label>
+        <input type="text" id="dataCriacao" value="2023-07-19T12:24:11.5299601+00:00" required>
+        <br><br>
+        
+        <label for="idItem">ID do Item:</label>
+        <input type="text" id="idItem" value="2434" required>
+        <br><br>
+        
+        <label for="quantidadeItem">Quantidade:</label>
+        <input type="number" id="quantidadeItem" value="1" required>
+        <br><br>
+        
+        <button type="button" onclick="createOrder()">Criar Pedido</button>
+    </form>
+    <div id="createOrderResult"></div>
+    
+    <hr>
+    
+    <h2>2. Obter Dados do Pedido</h2>
+    <label for="getOrderId">ID do Pedido:</label>
+    <input type="text" id="getOrderId" value="v10089015vdb">
+    <button onclick="getOrder()">Obter Pedido</button>
+    <div id="getOrderResult"></div>
+    
+    <hr>
+    
+    <h2>3. Listar Todos os Pedidos</h2>
+    <button onclick="listOrders()">Listar Pedidos</button>
+    <div id="listOrdersResult"></div>
+    
+    <hr>
+    
+    <h2>4. Atualizar Pedido</h2>
+    <label for="updateOrderId">ID do Pedido:</label>
+    <input type="text" id="updateOrderId" value="v10089015vdb">
+    <br><br>
+    
+    <label for="updateValorTotal">Novo Valor Total:</label>
+    <input type="number" id="updateValorTotal" value="15000">
+    <br><br>
+    
+    <button onclick="updateOrder()">Atualizar Pedido</button>
+    <div id="updateOrderResult"></div>
+    
+    <hr>
+    
+    <h2>5. Deletar Pedido</h2>
+    <label for="deleteOrderId">ID do Pedido:</label>
+    <input type="text" id="deleteOrderId" value="v10089015vdb">
+    <button onclick="deleteOrder()">Deletar Pedido</button>
+    <div id="deleteOrderResult"></div>
+    
+    <hr>
+    
+    <h2>Resposta Bruta</h2>
+    <pre id="rawResponse"></pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "order-api-native",
+  "version": "1.0.0",
+  "description": "API de gerenciamento de pedidos com Node.js puro e persistência em JSON.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
