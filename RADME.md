@@ -1,6 +1,6 @@
 # API de Gerenciamento de Pedidos (Node.js Puro)
 
-Esta é uma API RESTful simples desenvolvida em **Node.js puro** (sem dependências externas como Express ou body-parser) para gerenciar pedidos. Os dados dos pedidos são persistidos em um arquivo JSON (`arquivo.json`). Uma interface HTML (`index.html`) com JavaScript (`script.js`) é fornecida para facilitar os testes.
+Esta é uma API simples desenvolvida em **Node.js puro** como desafio pratico da jitterbit (sem dependências externas como Express ou body-parser) para gerenciar pedidos. Os dados dos pedidos são gravado em um arquivo JSON (`arquivo.json`). Uma interface HTML (`index.html`) com JavaScript (`script.js`) é fornecida para facilitar os testes.
 
 ## Funcionalidades
 
@@ -63,7 +63,7 @@ Certifique-se de ter o Node.js instalado em sua máquina. Nenhuma dependência e
 2. O arquivo `arquivo.json` será criado automaticamente na primeira execução, se não existir.
 3. Navegue até o diretório do projeto no terminal:
    ```bash
-   cd /home/ubuntu/order-api
+   cd /projeto
    ```
 
 ### Execução
@@ -207,7 +207,7 @@ A seguir, a documentação dos endpoints disponíveis:
 ## Estrutura do Projeto
 
 ```
-order-api/
+projeto/
 ├── app.js            # Servidor Node.js puro e lógica dos endpoints
 ├── arquivo.json      # Arquivo onde os dados dos pedidos são armazenados
 ├── index.html        # Interface HTML simples para testes da API
